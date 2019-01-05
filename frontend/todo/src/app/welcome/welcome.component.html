@@ -1,0 +1,18 @@
+<div class="container" *ngIf="errormsg">
+        {{errormsg}}
+    </div>
+
+<div>
+
+Welcome <h2>{{ name }}</h2> to this Page
+</div>
+<div>You can manage your to do list <a routerLink="/todos">here</a></div>
+
+<div class="container">
+    <button (click) = "getWelcomeMessageWithParameter()" class="btn btn-success"> Get Welcome message </button>
+</div>
+
+<div class="container" *ngIf="messagewelcome">
+    Your customized message
+    {{messagewelcome}}
+</div>
